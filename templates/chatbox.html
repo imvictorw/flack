@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flack</title>
+        <style>
+        .chatbox{
+            width:300px;
+            height:100px;
+            display:block;
+            border: 1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>{% block heading %}{% endblock %}</h1>
+        <div class="chatbox"> 
+            {% block textarea %}
+            {% endblock %}
+        </div>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

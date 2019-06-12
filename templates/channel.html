@@ -1,0 +1,20 @@
+{% extends "chatbox.html" %}
+
+{% block heading %}
+    Flack Channel
+{% endblock %}
+
+{% block textarea %}
+<p>{{ outputM }}</p>
+{% endblock %}
+
+{% block body %}
+
+<div class=textbox">
+    <form action="{{ url_for('chatpost') }}" method="post">
+        <input type="text" name="message" placeholder="Write something">
+        <input type="hidden" name="username" value={{name}}>
+        <button>Submit</button>
+    </form>
+</div>
+{% endblock %}

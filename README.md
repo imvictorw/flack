@@ -1,4 +1,4 @@
-#Project 2: Flack
+# Project 2: Flack
 
 Objectives
 Learn to use JavaScript to run code server-side.
@@ -7,7 +7,7 @@ Gain experience with Socket.IO to communicate between clients and servers.
 Overview
 In this project, you’ll build an online messaging service using Flask, similar in spirit to Slack. Users will be able to sign into your site with a display name, create channels (i.e. chatrooms) to communicate in, as well as see and join existing channels. Once a channel is selected, users will be able to send and receive messages with one another in real time. Finally, you’ll add a personal touch to your chat application of your choosing!
 
-Milestones
+# Milestones
 We recommend that you try to meet the following milestones:
 
 Complete the Display Name, Channel Creation, and Channel List steps.
@@ -15,17 +15,8 @@ Complete the Messages View and Sending Messages steps.
 Complete the Remembering the Channel and Personal Touch steps.
 Getting Started
 Python and Flask
-As with Project 1, make sure that you have a copy of Python 3.6 or higher installed on your machine. You’ll also need to install pip. If you downloaded Python from Python’s website, you likely already have pip installed (you can check by running pip in a terminal window). If you don’t have it installed, be sure to install it before moving on!
 
-To run this Flask application:
-
-Download the project2 distribution code from https://cdn.cs50.net/web/2018/spring/projects/2/project2.zip and unzip it.
-In a terminal window, navigate into your project2 directory.
-Run pip3 install -r requirements.txt in your terminal window to make sure that all of the necessary Python packages (Flask and Flask-SocketIO, for instance) are installed.
-Set the environment variable FLASK_APP to be application.py. On a Mac or on Linux, the command to do this is export FLASK_APP=application.py. On Windows, the command is instead set FLASK_APP=application.py.
-Run flask run to start up your Flask application.
-If you navigate to the URL provided by flask, you should see the text "Project 2: TODO"!
-Requirements
+# Requirements
 Alright, it’s time to actually build your web application! Here are the requirements:
 
 Display Name: When a user visits your web application for the first time, they should be prompted to type in a display name that will eventually be associated with every message the user sends. If a user closes the page and returns to your app later, the display name should still be remembered.
@@ -39,14 +30,3 @@ In README.md, include a short writeup describing your project, what’s containe
 If you’ve added any Python packages that need to be installed in order to run your web application, be sure to add them to requirements.txt!
 Beyond these requirements, the design, look, and feel of the website are up to you! You’re also welcome to add additional features to your website, so long as you meet the requirements laid out in the above specification!
 
-Hints
-You shouldn’t need to use a database for this assignment. However, you should feel free to store any data you need in memory in your Flask application, as via using one or more global variables defined in application.py.
-You will likely find that local storage will prove helpful for storing data client-side that will be saved across browser sessions.
-How to Submit
-Using Git, push your work to https://github.com/submit50/USERNAME.git, where USERNAME is your GitHub username, on a branch called cs50/web/2018/x/projects/2 or, if you’ve installed submit50, execute
-
-submit50 cs50/web/2018/x/projects/2
-instead.
-
-Record a 1- to 5-minute screencast in which you demonstrate your app’s functionality and/or walk viewers through your code. Upload that video to YouTube (as unlisted or public, but not private) or somewhere else.
-Submit this form.
